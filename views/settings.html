@@ -9,33 +9,39 @@
 </head>
 <body class="h-full bg-[#0b0e14] text-slate-300 font-sans antialiased overflow-hidden selection:bg-indigo-500/30">
 
-    <div class="flex h-full w-full overflow-hidden">
+    <div class="flex h-full w-full overflow-hidden bg-[#020617]">
         
         <!-- SIDEBAR -->
-        <aside class="hidden md:flex w-72 h-full flex-col bg-[#0f121a] border-r border-slate-800/60 shrink-0 z-30 shadow-[10px_0_40px_-10px_rgba(0,0,0,0.5)]">
-            <div class="h-20 px-8 flex items-center gap-4 shrink-0">
-                <div class="w-9 h-9 rounded-xl bg-indigo-600 flex items-center justify-center shadow-lg shadow-indigo-600/20">
+        <aside class="hidden md:flex w-72 h-full flex-col bg-slate-950/40 backdrop-blur-2xl border-r border-slate-800/40 shrink-0 z-30 shadow-[20px_0_50px_-20px_rgba(0,0,0,0.8)]">
+            <div class="h-24 px-8 flex items-center gap-4 shrink-0">
+                <div class="w-10 h-10 rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center shadow-lg shadow-indigo-500/20 animate-float">
                     <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                 </div>
-                <span class="text-lg font-black text-white font-heading">ShakhaNow</span>
+                <span class="text-xl font-black text-white font-heading tracking-tight">Shakha<span class="text-indigo-400">Now</span></span>
             </div>
 
             <nav class="flex-1 px-4 py-8 space-y-2 overflow-y-auto">
-                <p class="px-4 text-[10px] font-bold text-slate-500 uppercase tracking-[0.2em] mb-4">Core Management</p>
-                <a href="/admin" class="flex items-center px-4 py-3.5 text-slate-500 hover:text-slate-200 hover:bg-slate-800/40 rounded-2xl font-bold transition-all">
-                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-                    Dashboard
+                <p class="px-6 text-[10px] font-bold text-slate-500 uppercase tracking-[0.3em] mb-6 opacity-60">Management Hub</p>
+                
+                <a href="/admin" class="group flex items-center px-6 py-4 text-slate-400 hover:text-white hover:bg-white/5 rounded-2xl transition-all duration-300">
+                    <div class="w-8 h-8 rounded-xl bg-slate-800/50 flex items-center justify-center mr-4 group-hover:bg-indigo-500/10 group-hover:text-indigo-400 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    </div>
+                    <span class="font-bold tracking-tight">Dashboard</span>
                 </a>
-                <a href="/admin/settings" class="flex items-center px-4 py-3.5 bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 rounded-2xl font-bold transition-all">
-                    <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
-                    Settings
+
+                <a href="/admin/settings" class="flex items-center px-6 py-4 bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 rounded-2xl transition-all duration-300 shadow-lg shadow-indigo-500/10">
+                    <div class="w-8 h-8 rounded-xl bg-indigo-500/20 flex items-center justify-center mr-4">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <span class="font-bold tracking-tight">Settings</span>
                 </a>
             </nav>
 
-            <div class="px-6 py-8 border-t border-slate-800/60">
+            <div class="px-8 py-8 border-t border-slate-800/40">
                 <form action="/logout" method="POST">
-                    <button type="submit" class="w-full h-12 flex items-center justify-center gap-3 bg-red-500/5 text-red-500 border border-red-500/10 rounded-2xl font-bold hover:bg-red-500/10 transition-all">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
+                    <button type="submit" class="w-full h-14 flex items-center justify-center gap-3 bg-red-500/5 text-red-400 border border-red-500/20 rounded-2xl font-bold hover:bg-red-500/10 hover:text-red-300 transition-all duration-300">
+                        <svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
                         <span>Sign Out</span>
                     </button>
                 </form>
@@ -43,85 +49,126 @@
         </aside>
 
         <!-- MAIN LAYOUT -->
-        <div class="flex-1 flex flex-col min-w-0 h-full bg-[#0b0e14] relative">
+        <div class="flex-1 flex flex-col min-w-0 h-full bg-[#020617] relative overflow-hidden">
             
-            <header class="h-20 shrink-0 border-b border-slate-800/80 bg-[#0b0e14]/50 backdrop-blur-xl flex items-center justify-between px-6 md:px-10 z-20">
-                <div class="flex items-center gap-3">
-                    <a href="/admin" class="md:hidden w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center">
-                        <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            <!-- Dynamic Background Glows -->
+            <div class="absolute top-[-10%] right-[-10%] w-[50%] h-[50%] bg-indigo-500/10 blur-[120px] rounded-full"></div>
+            <div class="absolute bottom-[-10%] left-[-10%] w-[40%] h-[40%] bg-violet-600/10 blur-[100px] rounded-full"></div>
+
+            <header class="h-24 shrink-0 border-b border-white/5 bg-slate-950/20 backdrop-blur-2xl flex items-center justify-between px-8 md:px-12 z-20">
+                <div class="flex items-center gap-4">
+                    <a href="/admin" class="md:hidden w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center">
+                        <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                     </a>
-                    <h1 class="text-xl font-black text-white font-heading">Settings</h1>
+                    <div class="flex flex-col">
+                        <h1 class="text-2xl font-black text-white font-heading tracking-tight leading-none uppercase italic">Settings</h1>
+                        <span class="text-[10px] font-bold text-indigo-400 uppercase tracking-[0.3em] mt-1">Global Configuration</span>
+                    </div>
                 </div>
             </header>
 
             <!-- SCROLLABLE PAGE AREA -->
-            <main class="flex-1 overflow-y-auto px-6 py-8 md:px-10 md:py-12 pb-32 md:pb-12">
+            <main class="flex-1 overflow-y-auto px-6 py-12 md:px-16 md:py-20 pb-32 md:pb-20 relative z-10">
                 
-                <div class="max-w-3xl mx-auto">
+                <div class="max-w-4xl mx-auto space-y-16">
                     
                     {{if .Error}}
-                    <div class="flex items-center gap-4 bg-red-500/10 border border-red-500/20 text-red-400 rounded-2xl p-4 mb-10 text-sm font-bold animate-pulse">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-                        <span>{{.Error}}</span>
+                    <div class="flex items-center gap-6 bg-red-500/10 border border-red-500/20 text-red-400 rounded-3xl p-8 backdrop-blur-xl shadow-2xl animate-in fade-in slide-in-from-top-4 duration-500">
+                        <div class="shrink-0 w-12 h-12 rounded-2xl bg-red-500/20 flex items-center justify-center">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                        </div>
+                        <div class="space-y-1">
+                            <h4 class="font-black font-heading text-red-500">Action Required</h4>
+                            <p class="text-sm font-bold tracking-tight opacity-90">{{.Error}}</p>
+                        </div>
                     </div>
                     {{end}}
 
                     {{if .Success}}
-                    <div class="flex items-center gap-4 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-2xl p-4 mb-10 text-sm font-bold">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <span>{{.Success}}</span>
+                    <div class="flex items-center gap-6 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-3xl p-8 backdrop-blur-xl shadow-2xl animate-in fade-in slide-in-from-top-4 duration-500">
+                        <div class="shrink-0 w-12 h-12 rounded-2xl bg-emerald-500/20 flex items-center justify-center">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div class="space-y-1">
+                            <h4 class="font-black font-heading text-emerald-500">System Success</h4>
+                            <p class="text-sm font-bold tracking-tight opacity-90">{{.Success}}</p>
+                        </div>
                     </div>
                     {{end}}
 
-                    <section class="bg-[#0f121a] rounded-[2.5rem] border border-slate-800/80 shadow-2xl overflow-hidden">
-                        <div class="bg-gradient-to-r from-indigo-500/20 to-violet-500/20 px-8 md:px-12 py-10 border-b border-slate-800/50">
-                            <h2 class="text-2xl font-black text-white px-2">Account Discovery</h2>
-                            <p class="text-slate-500 text-xs font-bold uppercase tracking-[0.2em] mt-2 px-2">Manage your core profile identifiers</p>
+                    <!-- FORM SECTION -->
+                    <section class="glass-card rounded-[3rem] relative overflow-hidden group">
+                        
+                        <!-- Premium Decoration Header -->
+                        <div class="bg-gradient-to-br from-indigo-500/10 via-white/5 to-transparent px-10 md:px-16 py-16 border-b border-white/5 relative">
+                            <div class="absolute top-0 right-0 p-12 opacity-40 hidden lg:block animate-float">
+                                <svg class="w-24 h-24 text-indigo-500/40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
+                            <div class="relative z-10">
+                                <h2 class="text-4xl md:text-5xl font-black text-white font-heading tracking-tighter leading-none mb-4">Account <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-400">Hub</span></h2>
+                                <p class="text-slate-500 text-[10px] font-black uppercase tracking-[0.4em] flex items-center gap-3">
+                                    <span class="w-8 h-[2px] bg-indigo-500/40"></span>
+                                    Core Security & Discovery
+                                </p>
+                            </div>
                         </div>
 
-                        <form action="/admin/settings" method="POST" class="p-8 md:p-12 space-y-10">
+                        <form action="/admin/settings" method="POST" class="p-10 md:p-16 space-y-20 relative z-10">
                             
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-                                <div class="space-y-3">
-                                    <label class="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1">Display Name</label>
-                                    <input type="text" name="name" value="{{.User.Name}}" required class="w-full h-14 bg-slate-900 border border-slate-800 rounded-2xl focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 text-slate-100 px-5 text-sm font-bold transition-all outline-none">
+                            <!-- Identity Group -->
+                            <div class="space-y-12">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+                                    <div class="space-y-4">
+                                        <label class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] ml-2">Display Name</label>
+                                        <input type="text" name="name" value="{{.User.Name}}" required class="glass-input w-full h-18 px-8 text-base font-bold shadow-2xl">
+                                    </div>
+                                    <div class="space-y-4">
+                                        <label class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] ml-2">Unique Username</label>
+                                        <input type="text" name="username" value="{{.User.Username}}" required class="glass-input w-full h-18 px-8 text-base font-bold shadow-2xl">
+                                    </div>
                                 </div>
-                                <div class="space-y-3">
-                                    <label class="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1">Username</label>
-                                    <input type="text" name="username" value="{{.User.Username}}" required class="w-full h-14 bg-slate-900 border border-slate-800 rounded-2xl focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 text-slate-100 px-5 text-sm font-bold transition-all outline-none">
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+                                    <div class="space-y-4">
+                                        <label class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] ml-2">Email Address</label>
+                                        <input type="email" name="email" value="{{.User.Email}}" required class="glass-input w-full h-18 px-8 text-base font-bold shadow-2xl">
+                                    </div>
+                                    <div class="space-y-4">
+                                        <label class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] ml-2">Phone Number</label>
+                                        <input type="tel" name="phone" value="{{.User.Phone}}" required class="glass-input w-full h-18 px-8 text-base font-bold shadow-2xl">
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-                                <div class="space-y-3">
-                                    <label class="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1">Email Address</label>
-                                    <input type="email" name="email" value="{{.User.Email}}" required class="w-full h-14 bg-slate-900 border border-slate-800 rounded-2xl focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 text-slate-100 px-5 text-sm font-bold transition-all outline-none">
+                            <!-- Security Group -->
+                            <div class="pt-16 border-t border-white/5 space-y-12">
+                                <div class="flex items-center gap-5">
+                                    <div class="w-3 h-3 rounded-full bg-indigo-500 shadow-[0_0_15px_rgba(99,102,241,0.5)]"></div>
+                                    <h3 class="text-xs font-black text-white uppercase tracking-[0.4em] font-heading">Authentication Barrier</h3>
                                 </div>
-                                <div class="space-y-3">
-                                    <label class="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1">Phone Number</label>
-                                    <input type="tel" name="phone" value="{{.User.Phone}}" required class="w-full h-14 bg-slate-900 border border-slate-800 rounded-2xl focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 text-slate-100 px-5 text-sm font-bold transition-all outline-none">
-                                </div>
-                            </div>
-
-                            <div class="pt-8 space-y-8 border-t border-slate-800/50">
-                                <h3 class="text-xs font-black text-slate-500 uppercase tracking-widest ml-1">Security Update</h3>
                                 
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-                                    <div class="space-y-3">
-                                        <label class="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1">Current Password</label>
-                                        <input type="password" name="current_password" placeholder="Verify identity" class="w-full h-14 bg-slate-900 border border-slate-800 rounded-2xl focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 text-slate-100 px-5 text-sm font-bold transition-all outline-none">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+                                    <div class="space-y-4">
+                                        <label class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] ml-2">Current Password</label>
+                                        <input type="password" name="current_password" placeholder="••••••••" required class="glass-input w-full h-18 px-8 text-base font-bold shadow-2xl">
+                                        <p class="text-[9px] text-slate-600 font-bold ml-2 flex items-center gap-2 uppercase tracking-widest">
+                                            <span class="text-indigo-500 mr-1">●</span> Required for all profile changes.
+                                        </p>
                                     </div>
-                                    <div class="space-y-3">
-                                        <label class="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1">New Password</label>
-                                        <input type="password" name="new_password" placeholder="Define new credentials" class="w-full h-14 bg-slate-900 border border-slate-800 rounded-2xl focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 text-slate-100 px-5 text-sm font-bold transition-all outline-none">
+                                    <div class="space-y-4">
+                                        <label class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] ml-2">New Password (Optional)</label>
+                                        <input type="password" name="new_password" placeholder="••••••••" class="glass-input w-full h-18 px-8 text-base font-bold shadow-2xl">
+                                        <p class="text-[9px] text-slate-600 font-bold ml-2 flex items-center gap-2 uppercase tracking-widest">
+                                            <span class="text-slate-700 mr-1">●</span> Leave empty to keep current.
+                                        </p>
                                     </div>
                                 </div>
-                                <p class="text-[10px] text-slate-600 font-bold ml-1 italic capitalize">Authentication required: You must enter your current password to finalize any profile or password changes.</p>
                             </div>
 
-                            <div class="pt-6">
-                                <button type="submit" class="w-full md:w-auto px-12 h-14 bg-indigo-600 hover:bg-indigo-500 text-white rounded-2xl font-black shadow-xl shadow-indigo-600/20 transition-all transform active:scale-95">
-                                    Save Profile Changes
+                            <div class="pt-12 flex justify-end">
+                                <button type="submit" class="primary-btn w-full md:w-auto h-20 px-16 text-lg font-black tracking-tighter uppercase italic flex items-center justify-center gap-4 group">
+                                    <span>Sync Profile Updates</span>
+                                    <svg class="w-6 h-6 group-hover:translate-x-1.5 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                                 </button>
                             </div>
                         </form>
@@ -130,22 +177,25 @@
             </main>
 
             <!-- MOBILE BOTTOM NAV -->
-            <nav class="md:hidden fixed bottom-0 left-0 right-0 h-20 bg-[#0f121a]/95 backdrop-blur-xl border-t border-slate-800/80 flex items-center justify-around px-2 z-50">
-                <a href="/admin" class="flex flex-col items-center gap-1 text-slate-500">
-                    <div class="p-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg></div>
-                    <span class="text-[9px] font-bold uppercase tracking-widest">Dash</span>
+            <nav class="md:hidden fixed bottom-0 left-0 right-0 h-24 bg-slate-950/80 backdrop-blur-2xl border-t border-white/5 flex items-center justify-around px-4 z-50 shadow-[0_-10px_40px_rgba(0,0,0,0.5)]">
+                <a href="/admin" class="flex flex-col items-center gap-2 text-slate-500 hover:text-white transition-colors">
+                    <div class="p-3 rounded-2xl bg-white/5 transition-all"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg></div>
+                    <span class="text-[10px] font-black uppercase tracking-[0.2em] opacity-60">Dash</span>
                 </a>
-                <a href="/admin/settings" class="flex flex-col items-center gap-1 text-indigo-400">
-                    <div class="p-2 rounded-xl bg-indigo-500/10"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg></div>
-                    <span class="text-[9px] font-bold uppercase tracking-widest">Settings</span>
+                <a href="/admin/settings" class="flex flex-col items-center gap-2 text-indigo-400">
+                    <div class="p-3 rounded-2xl bg-indigo-500/10 shadow-lg shadow-indigo-500/10 border border-indigo-500/20"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg></div>
+                    <span class="text-[10px] font-black uppercase tracking-[0.2em]">Config</span>
                 </a>
-                <form action="/logout" method="POST" class="flex flex-col items-center gap-1">
-                    <button type="submit" class="text-red-500/60"><div class="p-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg></div></button>
-                    <span class="text-[9px] font-bold uppercase tracking-widest text-red-500/60">Exit</span>
+                <form action="/logout" method="POST" class="flex flex-col items-center gap-2">
+                    <button type="submit" class="text-red-500 hover:text-red-400 transition-colors">
+                        <div class="p-3 rounded-2xl bg-red-500/5"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg></div>
+                        <span class="text-[10px] font-black uppercase tracking-[0.2em] opacity-60">Exit</span>
+                    </button>
                 </form>
             </nav>
         </div>
     </div>
+
 
 </body>
 </html>
