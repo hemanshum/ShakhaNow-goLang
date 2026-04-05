@@ -1,0 +1,11 @@
+{
+  "name": "shakhanow-web",
+  "version": "1.0.0",
+  "description": "Tailwind configuration for ShakhaNow",
+  "scripts": {
+    "build:css": "tailwindcss -i ./styles/input.css -o ./public/style.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Login - ShakhaNow</title>
+    <meta name="theme-color" content="#0b0e14">
+    <link rel="manifest" href="/public/manifest.json">
+    <link rel="apple-touch-icon" href="/public/icons/icon-192x192.png">
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body class="h-full bg-[#0b0e14] text-slate-200 font-sans antialiased overflow-hidden selection:bg-indigo-500/30">
+    
+    <!-- Background Decor -->
+    <div class="fixed inset-0 z-0">
+        <div class="absolute top-[-20%] left-[-10%] w-full aspect-square bg-indigo-600/10 blur-[140px] rounded-full animate-pulse"></div>
+        <div class="absolute bottom-[-20%] right-[-10%] w-full aspect-square bg-violet-600/10 blur-[130px] rounded-full" style="animation-delay: 2s;"></div>
+    </div>
+
+    <!-- Centered App Container -->
+    <div class="relative z-10 h-full w-full flex flex-col items-center justify-center p-6 sm:p-12 overflow-y-auto">
+        
+        <!-- Login Card Wrapper -->
+        <main class="w-full max-w-[400px] space-y-12 shrink-0">
+            
+            <!-- Branding Header -->
+            <div class="text-center space-y-6">
+                <div class="inline-flex items-center justify-center w-20 h-20 rounded-[2rem] bg-indigo-600 shadow-2xl shadow-indigo-600/30 animate-float">
+                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                </div>
+                <div>
+                   <h1 class="text-4xl font-black text-white font-heading tracking-tight">ShakhaNow</h1>
+                   <p class="text-slate-500 text-xs font-bold uppercase tracking-[0.25em] mt-3">Infrastructure Control Console</p>
+                </div>
+            </div>
+
+            <!-- The Form Card -->
+            <div class="bg-[#0f121a] p-8 md:p-10 rounded-[2.5rem] border border-slate-800/80 shadow-2xl relative">
+                <div class="absolute inset-0 bg-indigo-500/5 blur-xl rounded-[2.5rem]"></div>
+                
+                <div class="relative z-10">
+                    {{if .Error}}
+                    <div class="flex items-center gap-4 bg-red-500/10 border border-red-500/20 text-red-500 rounded-2xl p-4 mb-8 text-sm font-bold">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                        <span>{{.Error}}</span>
+                    </div>
+                    {{end}}
+
+                    <form action="/login" method="POST" class="space-y-8">
+                        <div class="space-y-2.5">
+                            <label class="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1" for="email">Admin Interface</label>
+                            <input type="email" id="email" name="email" required placeholder="name@domain.com" class="w-full h-14 bg-slate-900 border border-slate-800 rounded-2xl focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 text-slate-100 px-5 text-sm font-bold transition-all outline-none">
+                        </div>
+                        
+                        <div class="space-y-2.5">
+                            <label class="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1" for="password">Security Protocol</label>
+                            <input type="password" id="password" name="password" required placeholder="••••••••••••" class="w-full h-14 bg-slate-900 border border-slate-800 rounded-2xl focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 text-slate-100 px-5 text-sm font-bold transition-all outline-none">
+                        </div>
+
+                        <div class="pt-2">
+                            <button type="submit" class="w-full h-14 bg-indigo-600 hover:bg-indigo-500 text-white rounded-2xl font-black shadow-xl shadow-indigo-600/30 transition-all transform active:scale-95 group flex items-center justify-center gap-3">
+                                <span>Synchronize Interface</span>
+                                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <p class="text-center text-slate-600 text-[10px] font-black uppercase tracking-[0.4em] pt-8">
+                &bull; SECURED NODE &bull;
+            </p>
+        </main>
+    </div>
+
+</body>
+</html>
